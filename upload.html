@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Uploader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Image Uploader</h1>
+  <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="image" required>
+    <button type="submit">Upload</button>
+  </form>
+  <div class="images">
+    <!-- Images will be displayed here -->
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
